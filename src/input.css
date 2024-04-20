@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "boldInter";
+	src: url("../assets/fonts/static/Inter-Bold.ttf");
+}
+
+@font-face {
+	font-family: "regularInter";
+	src: url("../assets/fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+	font-family: "semiInter";
+	src: url("../assets/fonts/static/Inter-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "inter";
+	src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+/* custom fonts  */
+.custom-font {
+	font-family: "inter";
+}
+
+.bold-inter {
+	font-family: "boldInter";
+}
+
+.regularInter {
+	font-family: "regularInter";
+}
+
+.semi-inter {
+	font-family: "semiInter";
+}
+
+ul li {
+	@apply bg-secondry-Grey p-3 mt-4 rounded-md text-center bold-inter hover:bg-primary-Green cursor-pointer hover:text-secondry-DarkGrey transition-all duration-300;
+}
+
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	position: fixed;
+	bottom: 10px;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+	font-weight: bold;
+}
